@@ -1,0 +1,54 @@
+/* Centrage de la section contact */
+.contact-section {
+    padding: 60px 0;
+  }
+  
+  /* Style pour l’en-tête */
+  .contact-section h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #343a40;
+  }
+  
+  /* Texte de description */
+  .contact-section p {
+    color: #6c757d;
+  }
+  
+  /* Champs de formulaire */
+  .contact-section .form-control {
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    border: 1px solid #ced4da;
+    transition: border-color 0.3s ease;
+  }
+  
+  .contact-section .form-control:focus {
+    border-color: #007bff;
+    box-shadow: none;
+  }
+  
+  /* Bouton d’envoi */
+  .contact-section .btn-danger {
+    background-color: #007bff;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-section .btn-danger:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive */
+  @media (max-width: 576px) {
+    .contact-section h2 {
+      font-size: 1.5rem;
+    }
+  
+    .contact-section {
+      padding: 30px 0;
+    }
+  }
+  

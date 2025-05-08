@@ -1,0 +1,51 @@
+/* Footer container style */
+.footer-container {
+    background-color: #333; /* Fond sombre similaire à la navbar */
+    color: #fff; /* Texte en blanc pour contraster avec le fond sombre */
+    padding: 20px 0;
+    margin-top: 50px;
+  }
+  
+  /* Titres de section dans le footer */
+  .footer-container h5 {
+    color: #e64141; /* Couleur violette pour les titres */
+    margin-bottom: 20px;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+  }
+  
+  /* Liens dans le footer */
+  .footer-container .nav-link {
+    color: #bbb; /* Couleur claire pour les liens */
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .footer-container .nav-link:hover {
+    color: #e64141; /* Change la couleur au survol */
+    text-decoration: underline; /* Ajoute un soulignement */
+  }
+  
+  /* Séparateurs entre les sections */
+  .footer-container .row {
+    border-bottom: 1px solid #444;
+    padding-bottom: 20px;
+  }
+  
+  /* Style pour le bas du footer */
+  .footer-container .text-center p {
+    color: #bbb;
+    margin-top: 20px;
+    font-size: 0.9rem;
+  }
+  
+  /* Réduction des marges dans les petits écrans */
+  @media (max-width: 992px) {
+    .footer-container .row {
+      margin-bottom: 20px;
+    }
+  
+    .footer-container h5 {
+      font-size: 1rem;
+    }
+  }
+  

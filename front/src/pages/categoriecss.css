@@ -1,0 +1,76 @@
+/* CATEGORY - Styles de Category.tsx */
+
+.category-container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #ffffff;
+    animation: fadeIn 0.7s ease-in;
+  }
+  
+  .category-title {
+    font-size: 32px;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .category-subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 30px;
+  }
+  
+  .category-empty {
+    text-align: center;
+    color: #888;
+    font-style: italic;
+    margin-top: 20px;
+  }
+  
+  .category-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+  }
+  
+  .category-card {
+    padding: 20px;
+    background: #f6f9fc;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s;
+  }
+  
+  .category-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .category-card h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .category-card .price {
+    color: #0077ff;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .category-btn {
+    padding: 10px 15px;
+    background-color: #0077ff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s ease;
+  }
+  
+  .category-btn:hover {
+    background-color: #005fc1;
+  }
+  

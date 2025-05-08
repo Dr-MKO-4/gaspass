@@ -1,0 +1,430 @@
+/* === DARK MODE GLOBAL === */
+body.dark-mode,
+.darkmode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Liens et éléments cliquables */
+body.dark-mode a,
+body.dark-mode .nav-link,
+body.dark-mode .dropdown-item,
+body.dark-mode .form-check-label,
+.darkmode a,
+.darkmode .nav-link,
+.darkmode .dropdown-item,
+.darkmode .form-check-label {
+    color: #ff6347 !important;
+}
+
+/* Éléments communs : navbar, dropdown, card, form */
+body.dark-mode .navbar,
+body.dark-mode .dropdown-menu,
+body.dark-mode .card,
+body.dark-mode button,
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea,
+.darkmode .navbar,
+.darkmode .dropdown-menu,
+.darkmode .card,
+.darkmode button,
+.darkmode input,
+.darkmode select,
+.darkmode textarea {
+    background-color: #1f1f1f;
+    color: #ffffff;
+    border-color: #444;
+}
+
+body.dark-mode button:hover,
+.darkmode button:hover {
+    background-color: #333;
+}
+
+/* Barres de recherche navbar */
+body.dark-mode .navbar input,
+body.dark-mode .navbar input:focus,
+.darkmode .navbar input,
+.darkmode .navbar input:focus {
+    background-color: #f1f1f1;
+    color: #121212;
+    border-color: #ccc;
+}
+
+body.dark-mode .navbar input:focus,
+.darkmode .navbar input:focus {
+    background-color: #ffffff;
+    border-color: #007bff;
+}
+
+/* === SECTIONS === */
+
+/* Carousel, About, Blog */
+body.dark-mode .carousel-section,
+body.dark-mode .about-section,
+body.dark-mode .blog-section,
+.darkmode .carousel-section,
+.darkmode .about-section,
+.darkmode .blog-section {
+    background-color: #2c2c2c !important;
+    color: #ffffff;
+}
+
+body.dark-mode .carousel-section .section-title,
+body.dark-mode .about-section .section-title,
+body.dark-mode .blog-section .section-title,
+.darkmode .carousel-section .section-title,
+.darkmode .about-section .section-title,
+.darkmode .blog-section .section-title {
+    color: #ffffff;
+}
+
+body.dark-mode .about-section p,
+body.dark-mode .blog-section p,
+.darkmode .about-section p,
+.darkmode .blog-section p {
+    color: #ddd;
+}
+
+/* ABOUT SECTION détails */
+body.dark-mode .about-section .display-5,
+.darkmode .about-section .display-5 {
+    color: #ff6347;
+}
+
+body.dark-mode .about-section .fw-bold,
+.darkmode .about-section .fw-bold {
+    font-weight: bold;
+}
+
+body.dark-mode .about-section .card,
+.darkmode .about-section .card {
+    background-color: #3a3a3a;
+    color: #f0f0f0;
+}
+
+body.dark-mode .about-section .card .btn-link,
+.darkmode .about-section .card .btn-link {
+    color: #f0f0f0;
+}
+
+body.dark-mode .about-section .card .btn-link:hover,
+.darkmode .about-section .card .btn-link:hover {
+    color: #ff6347;
+}
+
+body.dark-mode .about-section .btn,
+body.dark-mode .about-section .card .btn,
+.darkmode .about-section .btn,
+.darkmode .about-section .card .btn {
+    background-color: #444;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+body.dark-mode .about-section .btn:hover,
+.darkmode .about-section .btn:hover {
+    background-color: #666;
+}
+
+body.dark-mode .about-section .mt-4,
+.darkmode .about-section .mt-4 {
+    background-color: #444;
+    color: #fff;
+}
+
+body.dark-mode .about-section .badge,
+.darkmode .about-section .badge {
+    background-color: #555;
+    color: #fff;
+}
+
+/* === SHIPPING POLICY === */
+body.dark-mode .shipping-policy-section,
+.darkmode .shipping-policy-section {
+    background-color: #3a3a3a;
+    color: #ffffff;
+}
+
+body.dark-mode .shipping-policy-section .card-title,
+.darkmode .shipping-policy-section .card-title {
+    color: #fff;
+}
+
+body.dark-mode .shipping-policy-section .card-body,
+.darkmode .shipping-policy-section .card-body {
+    background-color: #444;
+    border-color: #555;
+}
+
+body.dark-mode .shipping-policy-section .badge,
+.darkmode .shipping-policy-section .badge {
+    color: #fff;
+}
+
+body.dark-mode .shipping-policy-section .badge.bg-success,
+.darkmode .shipping-policy-section .badge.bg-success {
+    background-color: #28a745;
+}
+
+body.dark-mode .shipping-policy-section .badge.bg-warning,
+.darkmode .shipping-policy-section .badge.bg-warning {
+    background-color: #ffc107;
+}
+
+body.dark-mode .shipping-policy-section .badge.bg-danger,
+.darkmode .shipping-policy-section .badge.bg-danger {
+    background-color: #dc3545;
+    box-shadow: 0 0 10px rgba(220, 53, 69, 0.6);
+}
+
+/* === TABLE === */
+body.dark-mode .table,
+.darkmode .table {
+    background-color: #2c2c2c;
+    color: #ffffff;
+    border-color: #444;
+}
+
+body.dark-mode .table th,
+body.dark-mode .table td,
+.darkmode .table th,
+.darkmode .table td {
+    border-color: #444;
+}
+
+body.dark-mode .table th,
+.darkmode .table th {
+    color: #ffffff;
+}
+
+/* === FORM ELEMENTS === */
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea,
+.darkmode input,
+.darkmode select,
+.darkmode textarea {
+    background-color: #333;
+    color: #ffffff;
+    border-color: #444;
+}
+
+body.dark-mode input:focus,
+body.dark-mode select:focus,
+body.dark-mode textarea:focus,
+.darkmode input:focus,
+.darkmode select:focus,
+.darkmode textarea:focus {
+    background-color: #444;
+    border-color: #007bff;
+}
+
+/* === CARDS === */
+body.dark-mode .card,
+.darkmode .card {
+    background-color: #2c2c2c;
+    color: #ffffff;
+    border-color: #444;
+}
+
+body.dark-mode .card .card-body,
+.darkmode .card .card-body {
+    background-color: #2c2c2c;
+    color: #ffffff;
+}
+
+body.dark-mode .card .d-flex,
+.darkmode .card .d-flex {
+    color: #ffffff;
+}
+
+body.dark-mode .card .text-success,
+.darkmode .card .text-success {
+    color: #66ff66 !important;
+}
+
+body.dark-mode .card .fw-bold,
+.darkmode .card .fw-bold {
+    font-weight: bold;
+}
+
+body.dark-mode .card .fs-5,
+.darkmode .card .fs-5 {
+    font-size: 1.25rem;
+}
+
+/* HR */
+body.dark-mode .card hr,
+.darkmode .card hr {
+    border-color: #444;
+}
+
+/* Styles pour le mode sombre */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+  
+  body.dark-mode .bg-light {
+    background-color: #2c2c2c !important;
+  }
+  
+  body.dark-mode .bg-white {
+    background-color: #333 !important;
+  }
+  
+  body.dark-mode .text-dark {
+    color: #e0e0e0 !important;
+  }
+  
+  body.dark-mode .text-success {
+    color: #5eac5e !important;
+  }
+  
+  body.dark-mode .badge {
+    background-color: #444 !important;
+  }
+  /* === CARDS === */
+body.dark-mode .card,
+.darkmode .card {
+    background-color: #2c2c2c;
+    color: #ffffff;
+    border-color: #444;
+}
+
+body.dark-mode .card .card-body,
+.darkmode .card .card-body {
+    background-color: #2c2c2c;
+    color: #ffffff;
+}
+
+body.dark-mode .card .card-header,
+.darkmode .card .card-header {
+    background-color: #444;
+    color: #ffffff;
+}
+
+body.dark-mode .card .card-footer,
+.darkmode .card .card-footer {
+    background-color: #444;
+    color: #ffffff;
+}
+
+body.dark-mode .card .d-flex,
+.darkmode .card .d-flex {
+    color: #ffffff;
+}
+
+body.dark-mode .card .text-success,
+.darkmode .card .text-success {
+    color: #66ff66 !important;
+}
+
+body.dark-mode .card .fw-bold,
+.darkmode .card .fw-bold {
+    font-weight: bold;
+}
+
+body.dark-mode .card .fs-5,
+.darkmode .card .fs-5 {
+    font-size: 1.25rem;
+}
+
+/* HR dans les cards */
+body.dark-mode .card hr,
+.darkmode .card hr {
+    border-color: #444;
+}
+/* === TABLE === */
+body.dark-mode .table,
+.darkmode .table .tr .th {
+    background-color: #2c2c2c;
+    color: #ffffff;
+    border-color: #444;
+}
+
+body.dark-mode .table th,
+body.darkmode .table th {
+    color: #ffffff;
+    border-color: #444;
+}
+
+body.dark-mode .table td,
+.darkmode .table td {
+    color: #ddd; /* Plus clair que le texte principal */
+    border-color: #444;
+}
+
+/* Styles pour les lignes de table alternées (facultatif mais pratique) */
+body.dark-mode .table-striped tbody tr:nth-of-type(odd),
+.darkmode .table-striped tbody tr:nth-of-type(odd) {
+    background-color: #333;
+}
+
+/* Hover pour les lignes de table */
+body.dark-mode .table-hover tbody tr:hover,
+.darkmode .table-hover tbody tr:hover {
+    background-color: #444;
+}
+
+
+/* Table styles */
+body.dark-mode .table {
+    background-color: #2c2c2c; /* Fond sombre pour la table */
+    color: #ffffff; /* Texte en blanc */
+    border-color: #444; /* Bordure de table claire */
+}
+
+/* En-têtes de table (th) */
+body.dark-mode .table th {
+    background-color: #3a3a3a; /* Fond plus sombre pour les en-têtes */
+    color: #ffffff; /* Texte en blanc pour les en-têtes */
+    border-color: #444; /* Bordure de table sombre */
+}
+
+/* Cellules de la table (td) */
+body.dark-mode .table td {
+    background-color: #2c2c2c; /* Fond sombre pour les cellules */
+    color: #ffffff; /* Texte en blanc dans les cellules */
+    border-color: #444; /* Bordure de cellule claire */
+}
+
+/* Ligne survolée dans la table */
+body.dark-mode .table tbody tr:hover {
+    background-color: #444; /* Fond plus sombre lors du survol des lignes */
+}
+
+/* Card styles in dark mode */
+body.dark-mode .card {
+    background-color: #2c2c2c; /* Fond sombre pour la carte */
+    color: #ffffff; /* Texte en blanc */
+    border-color: #444; /* Bordure claire pour la carte */
+}
+
+body.dark-mode .card .card-body {
+    background-color: #2c2c2c; /* Fond sombre pour le contenu de la carte */
+    color: #ffffff; /* Texte en blanc pour le contenu */
+}
+
+body.dark-mode .card .d-flex {
+    color: #ffffff; /* Texte blanc pour les éléments flexibles */
+}
+
+body.dark-mode .card .text-success {
+    color: #66ff66 !important; /* Vert plus lumineux pour le texte "Gratuite" */
+}
+
+body.dark-mode .card .fw-bold {
+    font-weight: bold; /* Assure que le texte reste en gras */
+}
+
+body.dark-mode .card .fs-5 {
+    font-size: 1.25rem; /* Ajustement de la taille de la police pour le total */
+}
+
+/* Lignes de séparation (hr) */
+body.dark-mode .card hr {
+    border-color: #444; /* Bordure plus claire pour la ligne de séparation */
+}
