@@ -1,6 +1,6 @@
 import "./footercss.css";
 import '@fortawesome/fontawesome-free/css/all.min.css';
-
+import potatoImg from '../assets/potato.png'; 
 const Footer = () => {
   return (
     <div className="container">
@@ -47,7 +47,8 @@ const Footer = () => {
             {/* Linktree */}
             <li className="ms-3">
               <a className="link-body-emphasis" href="https://linktr.ee/BIGGASPASS" target="_blank" rel="noopener noreferrer">
-                <i className="fab fa-linktree fa-lg"></i>
+                <img src="logo.png" alt="gaspass" className="logo"/>
+                
               </a>
             </li>
 
@@ -68,7 +69,7 @@ const Footer = () => {
             {/* Potato Menu */}
             <li className="ms-3">
               <a className="link-body-emphasis" href="https://diptm.org/gaspass" target="_blank" rel="noopener noreferrer">
-                <i className="fas fa-seedling fa-lg"></i> {/* Icône "nature" symbolique pour Potato */}
+                <img src={potatoImg} alt="potato" className="logo" />
               </a>
             </li>
 

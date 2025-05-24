@@ -3,7 +3,7 @@ import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { Container, Row, Col, Card, Button, Badge } from "react-bootstrap";
 import { StarFill, ArrowLeft } from "react-bootstrap-icons";
-import reviews from "../data/ReviewsData";
+import {reviews} from "../data/ReviewData";
 
 const ReviewDetails: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -55,7 +55,8 @@ const ReviewDetails: React.FC = () => {
                   />
                 ))}
                 <Badge bg="secondary" className="ms-2">
-                  {review.rating?.toFixed(1)} / 5
+                {!isNaN(Number(review.rating)) ? Number(review.rating).toFixed(1) : "N/A"} / 5
+
                 </Badge>
               </div>
             </Col>

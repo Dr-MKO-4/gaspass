@@ -3,7 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { Button, Card, Container, Row, Col, Badge } from "react-bootstrap";
 import { StarFill, CartPlus, ArrowLeft } from "react-bootstrap-icons";
 import useCartStore from "../context/cartStore";
-import featuredProducts from "../data/ProductData";
+import {featuredProducts} from "../data/ProductData";
 
 
 

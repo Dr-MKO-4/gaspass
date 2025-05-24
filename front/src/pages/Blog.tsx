@@ -3,8 +3,9 @@ import './blogcss.css';
 import { Container, Row, Col, Form, Button, Card, Badge, ListGroup } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
-import blogpost from '../data/BlogData';
+import { blogPosts }  from '../data/BlogPostData' ;
 
+const blogpost = blogPosts
 const Blog: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [sortOption, setSortOption] = useState('recent');

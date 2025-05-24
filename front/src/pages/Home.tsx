@@ -15,25 +15,19 @@ import {
 } from "react-bootstrap-icons";
 import { useNavigate } from "react-router-dom";
 import useCartStore from "../context/cartStore";
-import reviews from "../data/ReviewsData";
-import featuredProducts from "../data/ProductData";
-import blogPosts from "../data/BlogData";
+import {reviews} from "../data/ReviewData";
+import {featuredProducts} from "../data/ProductData";
+import {blogPosts} from "../data/BlogPostData";
 import "./homecss.css";
 import aboutImage from "../assets/about.jpg";
 import MultiCarousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { Product } from '../types/Products';
+import { Review } from "../types/Reviews";
+import { BlogPost } from "../types/BlogPost";
 
-interface Product {
-  id: number;
-  name: string;
-  description: string;
-  category: string;
-  price: number;
-  image: string;
-  rating?: number;
-  stock: number;
-}
 
+featuredProducts
 const Home: React.FC = () => {
   const { addToCart } = useCartStore();
   const navigate = useNavigate();

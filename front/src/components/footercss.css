@@ -49,3 +49,10 @@
     }
   }
   
+.logo{
+    height: 25px;
+    transition:  0.5s ease-in-out;
+}
+.logo:hover {
+    height: 40px;
+}

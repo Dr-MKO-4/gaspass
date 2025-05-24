@@ -2,7 +2,7 @@ import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { Button, Container, Row, Col, Card, Badge } from "react-bootstrap";
 import { ArrowLeft, Calendar, Clock, Person } from "react-bootstrap-icons";
-import blogPosts from "../data/BlogData";
+import {blogPosts} from "../data/BlogPostData";
 import "./articledetailcss.css";
 
 // Define the type for your blog posts
