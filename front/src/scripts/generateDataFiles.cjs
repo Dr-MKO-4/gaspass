@@ -72,19 +72,19 @@ async function main() {
     `);
     writeFile(path.join(dataDir, 'ProductData.ts'), 'featuredProducts', products);
 
-    // 2. Avis (reviews)
+    // // 2. Avis (reviews)
     const reviews = await queryTable(client, `
       SELECT
-        id,
-        author,
-        avatar,
+         id,
+         author,
+         avatar,
         rating,
-        text,
-        to_char(date, 'YYYY-MM-DD') AS date
-      FROM review
-      ORDER BY id;
-    `);
-    writeFile(path.join(dataDir, 'ReviewData.ts'), 'reviews', reviews);
+         text,
+         to_char(date, 'YYYY-MM-DD') AS date
+       FROM review
+       ORDER BY id;
+     `);
+     writeFile(path.join(dataDir, 'ReviewData.ts'), 'reviews', reviews);
 
     // 3. Articles de blog (blogPosts)
     const postsRaw = await queryTable(client, `
@@ -92,21 +92,23 @@ async function main() {
         bp.id,
         bp.title,
         bp.excerpt,
-        to_char(bp.date, 'DD Mon YYYY HH24:MI') AS date,
+        to_char( bp.created_at, 'DD Mon YYYY HH24:MI') AS date,
         bp.image,
         bp.image_caption    AS "imageCaption",
         bp.author,
         bp.content,
-        c.name             AS category,
+        bc.name             AS category,
         bp.likes,
         bp.comments_count  AS comments,
         bp.reading_time    AS "readingTime",
         ARRAY_REMOVE(ARRAY_AGG(t.name), NULL) AS tags
       FROM blog_post bp
-      LEFT JOIN category c   ON bp.category_id = c.id
+      
+      LEFT JOIN public.blog_category bc    ON bp.category_id = bc.id
+
       LEFT JOIN post_tag pt  ON bp.id = pt.post_id
       LEFT JOIN tag t        ON pt.tag_id = t.id
-      GROUP BY bp.id, c.name
+      GROUP BY bp.id, bc.name
       ORDER BY bp.id;
     `);
     writeFile(path.join(dataDir, 'BlogPostData.ts'), 'blogPosts', postsRaw);
