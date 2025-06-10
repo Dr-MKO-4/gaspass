@@ -228,7 +228,7 @@ const Home: React.FC = () => {
       responsive={reviewsResponsive}
       infinite
       autoPlay
-      autoPlaySpeed={3000}
+      autoPlaySpeed={1000}
       arrows
       showDots
       containerClass="reviews-carousel"

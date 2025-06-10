@@ -27,7 +27,7 @@ export const featuredProducts = [
     "price": 150000,
     "description": "Excellent rapport qualit‚-prix avec batterie longue dur‚e et performances solides.",
     "image": "https://i01.appmifile.com/webfile/globalimg/products/pc/redmi-note-11/specs01.png",
-    "category": 2,
+    "category": 1,
     "rating": "4.2",
     "stock": 30
   },
@@ -37,7 +37,7 @@ export const featuredProducts = [
     "price": 120000,
     "description": "Cam‚ra ultra-claire, design moderne, adapt‚ aux selfies et vid‚os.",
     "image": "https://fdn2.gsmarena.com/vv/pics/tecno/tecno-camon-18-1.jpg",
-    "category": 3,
+    "category": 1,
     "rating": "4.0",
     "stock": 25
   },
